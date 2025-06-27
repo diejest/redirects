@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/go",
+      "destination": "https://docs.google.com/drawings/d/1_cNvF03elp4y9M49VDgXuDC8yhXiXMFSo8haLgoyfH8/preview",
+      "permanent": true
+    }
+  ]
+}
